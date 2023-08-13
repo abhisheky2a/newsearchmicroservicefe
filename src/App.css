@@ -14,19 +14,111 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(55, 52, 52);
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: auto;
+  width: 100%;
+  overflow-x: hidden !important;
 }
+
+.App-body {
+  background-color: rgb(2, 2, 2);
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(5, 5, 5);
+  display: table;
+  table-layout: fixed;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.Text-Input {
+  display: block;
+  font-size: 31px;
+  font-family: inherit;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  border: 2px solid var(--input-border);
+  border-radius: 1%;
+  height: 60%;
+  width: 100%;
+  margin: auto;
+}
+
+.Submit-Button {
+  display: block;
+  background-color: rgb(55, 52, 52);
+  color: white;
+  border: none;
+  font-size: 31px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 1%;
+  height: 60%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.dropdown {
+  display: block;
+  position: relative;
+  background-color: rgb(55, 52, 52);
+  color: white;
+  font-size: 31px;
+  font-family: inherit;
+  box-shadow: 0 2px 4px darkslategray;
+  height: 60%;
+  width: 100%;
+  border-radius: 1%;
+  text-align: center;
+  margin: auto;
+}
+
+.News-Answer {
+  display: block;
+  position: fixed;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: rgb(18, 21, 214);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow:scroll;
+  scrollbar-color: white;
+  text-align: left;
+}
+
 
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
